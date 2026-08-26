@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@400;500;600&display=swap');
+500;600&family=DM+Sans:wght@400;500&display=swap');
+*{box-sizing:border-box}body{margin:0;background:#fbfaf7;color:#2f2a26;font-family:'DM Sans',sans-serif}a{text-decoration:none;color:inherit}
+nav{position:fixed;z-index:20;top:0;left:0;right:0;padding:24px 5vw;display:flex;justify-content:space-between;align-items:center;color:#fff;background:linear-gradient(#0008,transparent)}
+.logo{font:32px 'Cormorant Garamond'}.logo small{display:block;font:9px 'DM Sans';letter-spacing:.2em;text-transform:uppercase}.links{display:flex;gap:27px;font-size:10px;letter-spacing:.15em;text-transform:uppercase}
+.hero{height:100vh;min-height:700px;position:relative;display:flex;align-items:flex-end;padding:7vw;color:white;background:#777;overflow:hidden}.hero-bg{position:absolute;inset:0;background-position:center;background-size:cover;background-image:linear-gradient(0deg,#0009,transparent 60%),url('https://images.squarespace-cdn.com/content/v1/5a2d1d4c70a6ad4b1b9c7f2b/0a7f2f4b8d7f4a0b9c4d/MichelleAxel_CherryBlossoms2022_HR-150.jpg')}.hero-copy{position:relative;z-index:2;max-width:900px}
+.eyebrow{font-size:10px;letter-spacing:.22em;text-transform:uppercase}h1,h2,h3{font-family: 'Inter', sans-serif;font-weight:400;line-height:.9}h1{font-size:clamp(65px,9vw,135px);margin:18px 0 25px}h2{font-size:clamp(52px,6vw,85px);margin:10px 0 25px}p{line-height:1.7;color:#746d66;max-width:680px}.hero p{color:#fff;font-size:17px;max-width:600px}.btn{display:inline-block;border:1px solid currentColor;padding:13px 21px;margin-top:18px;font-size:10px;text-transform:uppercase;letter-spacing:.14em}
+section{padding:110px 6vw}.intro{text-align:center}.intro p{margin:20px auto;font-size:19px}.intro h2{max-width:900px;margin:15px auto}.stories{padding-top:30px}.masonry{display:grid;grid-template-columns:1.1fr .9fr;gap:15px;margin-top:45px}.pic{background:#777 center/cover no-repeat;min-height:650px;position:relative}.pic.small{min-height:315px}.pic span{position:absolute;bottom:18px;left:18px;color:#fff;font-size:9px;text-transform:uppercase;letter-spacing:.15em}
+.split{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:center}.split .pic{min-height:620px}.cream{background:#f0ebe4}.dark{background:#f0ebe4;color:#2f2a26}.dark p{color:#746d66}.services{padding-bottom:40px}.service{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:center;padding:80px 0;border-top:1px solid #d7d0c8}.service .pic{min-height:620px}.price{font:23px 'Cormorant Garamond';color:#806653;margin-top:22px}.cta{text-align:center;padding:140px 8vw}footer{padding:60px 6vw;display:flex;justify-content:space-between;border-top:1px solid #d7d0c8}footer p{font-size:12px}
+@media(max-width:760px){.links{display:none}nav{padding:20px}section{padding:80px 20px}.hero{padding:28px;min-height:750px}.masonry,.split,.service{grid-template-columns:1fr;gap:25px}.pic,.split .pic,.service .pic{min-height:470px}footer{display:block}}
+
+.trust-strip{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:#d9d2ca;border:1px solid #d9d2ca;margin:0 6vw}.trust-strip div{background:#fbfaf7;padding:25px;text-align:center}.trust-strip strong{display:block;font:24px 'Cormorant Garamond';font-weight:500}.trust-strip span{display:block;font-size:9px;letter-spacing:.13em;text-transform:uppercase;margin-top:7px;color:#766e67}
+.story-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:45px}.story-card{background:#f0ebe4}.story-card .pic{min-height:430px}.story-card .story-copy{padding:25px}.story-card h3{font-size:38px;margin:8px 0}
+.process{background:#f0ebe4}.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:0;margin-top:55px}.step{padding:25px;border-top:1px solid #cfc7be}.step b{font:26px 'Cormorant Garamond';font-weight:500}.step h3{font-size:31px;margin:20px 0 10px}
+.invest-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:45px}.invest-card{border:1px solid #d9d2ca;padding:30px;background:#fffdfa}.invest-card .amount{font:34px 'Cormorant Garamond';margin:14px 0}
+.location-links{display:flex;flex-wrap:wrap;gap:10px;margin-top:25px}.location-links a{border:1px solid #d4ccc3;padding:10px 14px;font-size:10px;letter-spacing:.1em;text-transform:uppercase}.sticky-mobile{display:none}
+@media(max-width:760px){.trust-strip{grid-template-columns:1fr 1fr;margin:0 20px}.story-cards,.invest-grid{grid-template-columns:1fr}.steps{grid-template-columns:1fr 1fr}.sticky-mobile{display:block;position:fixed;z-index:30;bottom:0;left:0;right:0;background:#2f2a26;color:#fff;text-align:center;padding:14px;font-size:10px;letter-spacing:.12em;text-transform:uppercase}.sticky-mobile a{margin:0 12px}}
+
+/* =========================================================
+   MICHELLE JOB PHOTOGRAPHY — TYPOGRAPHY SYSTEM V3
+   Editorial display + restrained modern sans
+   ========================================================= */
+:root{
+  --font-display:'Cormorant Garamond', Georgia, serif;
+  --font-body:'Inter', Arial, sans-serif;
+  --text:#2f2a26;
+  --muted:#746d66;
+}
+
+html{font-family:var(--font-body);-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+body{font-family:var(--font-body);color:var(--text);font-size:16px;line-height:1.7}
+h1,h2,h3,h4,h5,h6,
+.logo a,
+.story-card h3,
+.invest-card .amount,
+.trust-strip strong,
+.step b{
+  font-family:var(--font-display);
+  font-weight:500;
+  letter-spacing:-.015em;
+}
+h1{font-size:clamp(64px,8.5vw,126px);line-height:.88}
+h2{font-size:clamp(48px,6vw,86px);line-height:.94}
+h3{font-size:clamp(30px,3.2vw,46px);line-height:1}
+p{font-family:var(--font-body);font-weight:400}
+nav,.links,.btn,.eyebrow,.story-card .pic span,
+.trust-strip span,.location-links a,.sticky-mobile{
+  font-family:var(--font-body);
+}
+.eyebrow{
+  font-size:10px;
+  line-height:1.2;
+  font-weight:600;
+  letter-spacing:.16em;
+  text-transform:uppercase;
+}
+.links a,.btn{
+  font-size:10px;
+  font-weight:500;
+  letter-spacing:.12em;
+  text-transform:uppercase;
+}
+.logo a{
+  font-size:31px;
+  line-height:.8;
+}
+.logo small{
+  font-family:var(--font-body);
+  font-size:8px;
+  font-weight:500;
+  letter-spacing:.25em;
+  text-transform:uppercase;
+}
+.story-card h3{font-size:clamp(34px,3vw,45px);line-height:.95}
+.invest-card .amount{font-size:38px;line-height:1}
+.trust-strip strong{font-size:28px;line-height:1}
+.step b{font-size:28px}
+.step h3{font-family:var(--font-display);font-size:34px;line-height:1}
+.lead{font-family:var(--font-body);font-size:clamp(17px,1.5vw,20px);line-height:1.65}
+@media(max-width:760px){
+  h1{font-size:clamp(54px,15vw,78px);line-height:.9}
+  h2{font-size:clamp(43px,12vw,62px);line-height:.95}
+  h3{font-size:34px}
+  .logo a{font-size:27px}
+  .lead{font-size:16px;line-height:1.65}
+}

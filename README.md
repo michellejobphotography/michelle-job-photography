@@ -1,0 +1,1 @@
+This is the substantially closer visual prototype. It uses the current site's portfolio image URLs and real service/pricing information. For production, those images should be downloaded/optimized and self-hosted so Squarespace can be cancelled safely.
